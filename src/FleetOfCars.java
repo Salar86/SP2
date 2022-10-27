@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class FleetOfCars {
-    private ArrayList<Car> fleet = new ArrayList<>();
+    private final ArrayList<Car> fleet = new ArrayList<>();
 
     public void addCar(Car car){
         fleet.add(car);

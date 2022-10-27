@@ -1,8 +1,8 @@
 public abstract class ACar implements Car {
-    private String registrationNumber;
-    private String make;
-    private String model;
-    private int numberOfDoors;
+    private final String registrationNumber;
+    private final String make;
+    private final String model;
+    private final int numberOfDoors;
 
     public ACar(String registrationNumber, String make, String model, int numberOfDoors) {
         this.registrationNumber = registrationNumber;
@@ -33,6 +33,6 @@ public abstract class ACar implements Car {
 
     @Override
     public String toString() {
-        return "\n Registration number: "+registrationNumber+" \n Brand: "+make+" \n Model: "+model+" \n Number of doors: "+numberOfDoors;
+        return "\n Registration number: "+getRegistrationNumber()+" \n Manufacturer: "+getMake()+" \n Model: "+getModel()+" \n Number of doors: "+getNumberOfDoors();
     }
 }

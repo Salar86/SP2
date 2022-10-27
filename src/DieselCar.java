@@ -1,5 +1,5 @@
 public class DieselCar extends AFuelCar{
-    private boolean particleFilter;
+    private final boolean particleFilter;
 
 
 
